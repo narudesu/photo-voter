@@ -14,7 +14,7 @@ export default class Competition extends React.Component {
 
   renderPhotos() {
     return this.state.photos.map(p => (
-      <Photo />
+      <Photo key={p.id} id={p.id}/>
     ))
   }
 
@@ -25,9 +25,9 @@ export default class Competition extends React.Component {
           {this.state.name} <span className="text-muted">{this.state.state}</span>
         </h4>
         <div className="row">
-          <div className="col-sm-6">Heh</div>
-          <div className="col-sm-6">Heh</div>
-          <div className="col-sm-6">Heh</div>
+        {this.renderPhotos().map(photo => (
+          <div className="col-md-6 col-lg-4 col-xl-3" key={photo.key}>{photo}</div>
+        ))}
         </div>
       </div>
     )
