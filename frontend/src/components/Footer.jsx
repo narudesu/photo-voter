@@ -11,9 +11,10 @@ export default class Footer extends React.Component {
         <footer
           className="container-fluid text-xs-center"
           style={{
-            position: 'fixed',
+            position: 'relative',
             bottom: 0,
-            width: '100%'
+            width: '100%',
+            backgroundColor: 'white'
         }}>
           by narudesu
         </footer>
