@@ -15,6 +15,7 @@ export default class Header extends React.Component {
           <ul>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/login">Login</NavLink>
+            <NavLink to="/competitions">Competitions</NavLink>
           </ul>
         </nav>
       </header>
