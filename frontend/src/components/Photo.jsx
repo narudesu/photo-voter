@@ -10,13 +10,11 @@ export default class Photo extends React.Component {
       <div className="photo-card">
         <div className="img" style={{backgroundImage: `url(/img/photos/${this.props.id}.jpg)`}}>
         </div>
-        <div className="info">
-          <h2>{this.props.title}</h2>
-        </div>
-        <div className="action">
-          <button>Vote</button>
-          <button>Vote</button>
-          <button>Vote</button>
+        <div className="bottom">
+          <div className="info">
+            <h2>{this.props.title}</h2>
+            <h2 className="votes">32</h2>
+          </div>
         </div>
       </div>
     )
