@@ -7,6 +7,8 @@ import Home from './components/Home'
 import Competitions from './components/Competitions'
 import Competition from './components/Competition'
 
+require('./style/main.scss')
+
 const routes = (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
