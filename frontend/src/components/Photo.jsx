@@ -7,11 +7,17 @@ export default class Photo extends React.Component {
 
   render() {
     return (
-      <div className="text-xs-center">
-        <img
-          className="img-fluid"
-          src={`/img/photos/${this.props.id}.jpg`}
-          />
+      <div className="photo-card">
+        <div className="img" style={{backgroundImage: `url(/img/photos/${this.props.id}.jpg)`}}>
+        </div>
+        <div className="info">
+          <h2>{this.props.title}</h2>
+        </div>
+        <div className="action">
+          <button>Vote</button>
+          <button>Vote</button>
+          <button>Vote</button>
+        </div>
       </div>
     )
   }

@@ -1,0 +1,35 @@
+.photo-container {
+  padding: 10px;
+}
+
+.photo-card {
+  width: auto;
+  height: 400px;
+  border: 1px solid rgba(225, 225, 230, 0.66);
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(225, 225, 230, 0.42);
+  padding: 10px;
+  .img {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-size: 166% auto;
+    height: 70%;
+  }
+  .info {
+    padding-top: 6px;
+  }
+  .action {
+    button {
+      background: none !important;
+      border: none;
+      cursor: pointer;
+      font: inherit;
+    }
+  }
+}
