@@ -14,13 +14,28 @@
     background-size: 200% auto;
     height: 100%;
   }
-  .action {
+  .actions {
+    font-size: 100px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.195s ease-out;
+    color: white;
     i {
-      position: absolute;
-      top: 13px;
-      right: 20px;
-      font-size: 6rem;
       cursor: pointer;
+      text-shadow: 0px 0px 5px #555;
+      transition: text-shadow 0.195s ease-out, transform 0.1s ease-out, color 0.12s;
+      &:hover {
+        text-shadow: 0px 0px 10px #222;
+      }
+      &:active {
+        transform: scale(0.8);
+        color: #eee;
+      }
     }
   }
   .bottom {
@@ -42,6 +57,12 @@
         }
       }
     }
+    cursor: auto;
+  }
 
+  cursor: zoom-in;
+
+  &:hover .actions {
+    opacity: 1.0;
   }
 }

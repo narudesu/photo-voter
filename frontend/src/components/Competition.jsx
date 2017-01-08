@@ -14,8 +14,19 @@ export default class Competition extends React.Component {
 
   renderPhotos() {
     return this.state.photos.map(p => (
-      <Photo key={p.id} {...p} />
+      <Photo key={p.id}
+        viewPhoto={this.viewPhoto.bind(this)}
+        addToBasket={this.addToBasket.bind(this)}
+        {...p} />
     ))
+  }
+
+  viewPhoto(id) {
+    console.log(`view ${id}`)
+  }
+
+  addToBasket(id) {
+    console.log(`basket ${id}`)
   }
 
   render() {
